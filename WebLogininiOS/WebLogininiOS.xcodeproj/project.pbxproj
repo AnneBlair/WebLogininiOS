@@ -13,6 +13,10 @@
 		1070E5D61D1CF5CF00FDF66B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1070E5D41D1CF5CF00FDF66B /* Main.storyboard */; };
 		1070E5D81D1CF5CF00FDF66B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1070E5D71D1CF5CF00FDF66B /* Assets.xcassets */; };
 		1070E5DB1D1CF5CF00FDF66B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1070E5D91D1CF5CF00FDF66B /* LaunchScreen.storyboard */; };
+		1070E5E41D1D5DC800FDF66B /* YYGUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 1070E5E31D1D5DC800FDF66B /* YYGUtil.m */; };
+		1070E5EA1D1D692E00FDF66B /* action.php in Resources */ = {isa = PBXBuildFile; fileRef = 1070E5E71D1D692E00FDF66B /* action.php */; };
+		1070E5EB1D1D692E00FDF66B /* action_get.php in Resources */ = {isa = PBXBuildFile; fileRef = 1070E5E81D1D692E00FDF66B /* action_get.php */; };
+		1070E5EC1D1D692E00FDF66B /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 1070E5E91D1D692E00FDF66B /* index.html */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,11 @@
 		1070E5D71D1CF5CF00FDF66B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1070E5DA1D1CF5CF00FDF66B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1070E5DC1D1CF5CF00FDF66B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1070E5E21D1D5DC800FDF66B /* YYGUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYGUtil.h; sourceTree = "<group>"; };
+		1070E5E31D1D5DC800FDF66B /* YYGUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYGUtil.m; sourceTree = "<group>"; };
+		1070E5E71D1D692E00FDF66B /* action.php */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.php; path = action.php; sourceTree = "<group>"; };
+		1070E5E81D1D692E00FDF66B /* action_get.php */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.php; path = action_get.php; sourceTree = "<group>"; };
+		1070E5E91D1D692E00FDF66B /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +51,7 @@
 		1070E5BF1D1CF5CE00FDF66B = {
 			isa = PBXGroup;
 			children = (
+				1070E5E61D1D692E00FDF66B /* 网页 */,
 				1070E5CA1D1CF5CE00FDF66B /* WebLogininiOS */,
 				1070E5C91D1CF5CE00FDF66B /* Products */,
 			);
@@ -67,6 +77,8 @@
 				1070E5D91D1CF5CF00FDF66B /* LaunchScreen.storyboard */,
 				1070E5DC1D1CF5CF00FDF66B /* Info.plist */,
 				1070E5CB1D1CF5CE00FDF66B /* Supporting Files */,
+				1070E5E21D1D5DC800FDF66B /* YYGUtil.h */,
+				1070E5E31D1D5DC800FDF66B /* YYGUtil.m */,
 			);
 			path = WebLogininiOS;
 			sourceTree = "<group>";
@@ -77,6 +89,16 @@
 				1070E5CC1D1CF5CF00FDF66B /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1070E5E61D1D692E00FDF66B /* 网页 */ = {
+			isa = PBXGroup;
+			children = (
+				1070E5E71D1D692E00FDF66B /* action.php */,
+				1070E5E81D1D692E00FDF66B /* action_get.php */,
+				1070E5E91D1D692E00FDF66B /* index.html */,
+			);
+			path = "网页";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +161,9 @@
 			files = (
 				1070E5DB1D1CF5CF00FDF66B /* LaunchScreen.storyboard in Resources */,
 				1070E5D81D1CF5CF00FDF66B /* Assets.xcassets in Resources */,
+				1070E5EA1D1D692E00FDF66B /* action.php in Resources */,
+				1070E5EC1D1D692E00FDF66B /* index.html in Resources */,
+				1070E5EB1D1D692E00FDF66B /* action_get.php in Resources */,
 				1070E5D61D1CF5CF00FDF66B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -153,6 +178,7 @@
 				1070E5D31D1CF5CF00FDF66B /* ViewController.m in Sources */,
 				1070E5D01D1CF5CF00FDF66B /* AppDelegate.m in Sources */,
 				1070E5CD1D1CF5CF00FDF66B /* main.m in Sources */,
+				1070E5E41D1D5DC800FDF66B /* YYGUtil.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

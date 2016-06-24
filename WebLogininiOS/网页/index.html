@@ -1,0 +1,40 @@
+<html>
+<head>
+<title>登录</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+</head>
+<body>
+<form action='action.php' method='post' onsubmit='return check()'>
+<table border='1' align='center'>
+    <tr><td>账号</td><td><input type='text' id='uname' size='20' name='uname'></td></tr>
+    <tr><td>密码</td><td><input type='password' id='upass' size='20' name='upass'></td></tr>
+    <tr><td colspan='2' align='center'><input type='submit' value='login' name='submit'><input type='submit' value='register' name='submit'></td></tr>
+</table>
+</form>
+</body>
+</html>
+<script>
+    String.prototype.Trim = function()
+    {
+        return this.replace(/(^\s*)|(\s*$)/g, "");
+    }
+    function check()
+    {
+        var username=uname.value.Trim();
+        var password=upass.value.Trim();
+        if(username=="")
+        {
+            alert("账号不能为空，你必须填写！");
+            uname.value="";
+            uname.focus();
+            return false;
+        }
+        if(password=="")
+        {
+            alert("密码不能为空，你必须填写！");
+            upass.value="";
+            upass.focus();
+            return false;
+        }
+    }
+</script>
