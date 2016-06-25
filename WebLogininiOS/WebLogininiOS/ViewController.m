@@ -40,6 +40,37 @@
     //启动任务
     [task resume];
     NSLog(@"this is main!!");
+    /**
+     *  如果是post下面是执行代码
+     //post
+     //得到用户名和密码
+     NSString * uname=self.unameText.text;
+     NSString * upass=self.upassText.text;
+     //剔除两端空格
+     
+     //有效性验证
+     
+     //注册
+     //url
+     NSString * strUrl=[NSString stringWithFormat:@"http://127.0.0.1/YYG/qqss/action.php"];
+     NSURL * url=[NSURL URLWithString:strUrl];
+     //请求
+     NSMutableURLRequest * request=[NSMutableURLRequest requestWithURL:url];
+     //设置提交方式为post
+     [request setHTTPMethod:@"post"];
+     //设置提交参数
+     NSString * strParameter=[NSString stringWithFormat:@"uname=%@&upass=%@&submit=register",uname,upass];
+     NSLog(@"%@",strParameter);
+     [request setHTTPBody:[strParameter dataUsingEncoding:NSUTF8StringEncoding]];
+     NSURLSession * session=[NSURLSession sharedSession];
+     NSURLSessionDataTask * task=[session dataTaskWithRequest:request completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
+     NSLog(@"%@",[[NSString alloc]initWithData:data encoding:NSUTF8StringEncoding]);
+     [self performSelectorOnMainThread:@selector(action:) withObject:data waitUntilDone:YES];
+     }];
+     [task resume];
+     NSLog(@"this is main!!");
+     *
+     */
 }
 -(void)action:(NSData *)data
 {
